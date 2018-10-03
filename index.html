@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Test </title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="main.css">
+	<script>
+	
+	</script>
+</head>
+
+<body id="main">
+	<div id="nav">
+		<a href="index.html"><p id="home"> Home </p></a>
+		<p id="contact"> Contact us </p>
+	</div>
+	<div id='body'>
+
+		<h1 class="head">IQ Test</h1>
+	
+	</div>
+	
+
+	
+    <script>
+      var map;
+      function initMap() {
+      	var RBK = {lat: 31.986515, lng: 35.83769887};
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: RBK,
+          zoom: 16
+        });
+        var marker = new google.maps.Marker({
+          position: RBK,
+          map: map,
+          title: 'RBK!'
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa0tf25nzGhU8T-mYATnN_p3NJD6ynSfo&callback=initMap"
+    async defer></script>
+	<button id="btn">Submit</button>
+
+	<div id="map"></div>
+	<script type="text/javascript" src="main.js">
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,6 +8,8 @@ function Question(question, choices, answer) {
 
 	cls.usersAnswer = usersAnswer;
 	cls.correct = false;
+
+	return cls;
 }
 
 var usersAnswer = function(answer) {
@@ -32,3 +34,52 @@ var q12 = Question('If all Bloops are Razzies and all Razzies are Lazzies, then 
 var q13 = Question('Choose the word most similar to "Trustworthy":',['Resolute', 'Tenacity', 'Relevant', 'Insolent', 'Reliable'], 'Reliable');
 
 var questions = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13];
+
+var $Q = $('.question') // question big box
+var $As = $('.answers')	// answers white box
+var $p = $('.p')	//	paragraph for each answer
+var $a = $('.a')	// answer
+
+
+for(var i = 0; i < questions.length; i++) {
+	var choice = '';
+	
+	$.each(questions[i].choices,function(j, e){
+			choice+= '<p class="choice" style="margin-left: 2%"> <input name="'+i+'" type="radio" class="c'+i+'" value="'+ e +'" /> <label for="c">'+e+'</label> </p>';
+		});
+
+	var qs = '<div class="question"><p class="question1"> '+questions[i].question+'</p> <div id="'+i+'" class="answers"> '+choice+' </div> <div>  </div> </div> <hr>';
+
+	$('#body').append(qs);
+}
+
+var counter = 0;
+
+$('#btn').click(function(){
+	if ($( "input:checked" ).length < 12){
+		alert("answer all questions wala");
+	} else {
+		for (var i = 0; i < questions.length; i++) {
+			if ($( "input:checked" )[i].value === questions[i].answer) {
+				counter++;
+			} 
+			
+		}
+		if(counter < 70) {
+			$(body).html('<h1 style="text-align: center">Kill yourself</h1>');
+		}
+		console.log(counter);
+	}
+})
+
+$(document).ready(function(){
+	$('#body').fadeIn(3000);
+
+	
+	});
+
+$("#contact").click(function() {
+     	$('html, body').animate({
+         	scrollTop: $("#map").offset().top
+     		}, 3000);
+ 		});
