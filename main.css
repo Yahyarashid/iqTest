@@ -18,6 +18,7 @@
 
 #home {
 	text-decoration: none;
+	cursor: pointer;
 	color : white;
 	margin-left: 5%;
 	font-family: Georgia;
@@ -26,6 +27,7 @@
 
 #contact {
 	text-decoration: none;
+	cursor: pointer;
 	color : white;
 	padding-left: 3%;
 	width: 150px;
@@ -51,27 +53,27 @@
 }
 
 .btn-group {
-    background-color: white;
-	font-family: Georgia;
-	margin-top: 2.5%;
-	margin-left: 20%;
-	height: 100px;
-	width: 60%;
-	font-size: 17px;
-	color: white;
-    cursor: pointer; /* Pointer/hand icon */
+   background-color: white;
+    font-family: Georgia;
+    margin-top: 2.5%;
+    margin-left: 20%;
+    height: 100px;
+    width: 60%;
+    font-size: 17px;
+    color: white;
+   cursor: pointer;
 
 }
 
 .a {
-	background-color: #0A5F6D;
-	width: 25%;
-	height: 50%;
-	margin: 3%;
-	margin-left: 4.5%;
-	font-family: Georgia;
-	font-size: 17px;
-	color: white;
+    background-color: #0A5F6D;
+    width: 25%;
+    height: 50%;
+    margin: 3%;
+    margin-left: 4.5%;
+    font-family: Georgia;
+    font-size: 17px;
+    color: white;
 }
 
 .question {
@@ -120,6 +122,7 @@ hr {
 .btn {
 	/*background-color: #334431;*/
 	/*background-color: grey;*/
+	display: none;
 	background-color: #0A5F6D;
 	font-family: Georgia;
 	margin-top: 2.5%;
@@ -170,7 +173,13 @@ hr {
 	color: #EA594F;
 }
 
-
+#inst {
+    margin-left: 30%;
+    margin-top: 2.5%;
+    font-family: Georgia;
+    font-size: 17px;
+    color: #0A5F6D;
+}
 
 
 
