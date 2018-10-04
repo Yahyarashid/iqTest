@@ -140,7 +140,7 @@ var game = '';
 var pos = Math.floor(Math.random() * 600);
 for(var i = 0; i < 600; i++) {
 	if(i === pos) {
-		game += '<span id="dolar" style="margin:0;">$ </span>';
+		game += '<span id="dollar" style="margin:0;">$ </span>';
 	} else {
 	game += '8 ';
 	}
