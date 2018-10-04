@@ -6,9 +6,6 @@ function Question(question, choices, answer) {
 	cls.choices = choices;
 	cls.answer = answer;
 
-	
-	cls.correct = false;
-
 	return cls;
 }
 // Creating our questions
@@ -69,8 +66,8 @@ var counter = 0; // The number of correct answers
 
 function submit(num) {
 	$(".btn").click(function() { // The submit button
-	$('html, body').animate({
- 	scrollTop: $("#main").offset().top
+		$('html, body').animate({
+ 			scrollTop: $("#main").offset().top
 		},0); // Scrolls to the top of the page
 	});
 	// The submit button
@@ -94,16 +91,16 @@ function submit(num) {
 
 		// Displaying the IQ result
 		if(ratio < 0.4) {
-			$('#body').html('<h1 style="text-align: center; margin-right: 9%"> Your IQ is: '+result+', Kill yourself!!</h1> \n <img src="https://i.imgur.com/UwIy08o.gif" >');
+			$('#body').html('<center><h1 style="text-align: center; margin-right: 11%"> Your IQ is: '+result+', Kill yourself!!</h1> \n <img src="https://i.imgur.com/UwIy08o.gif" ></center>');
 		}
 		else if (ratio < 0.65) {
-			$('#body').html('<h1 style="text-align: center; margin-right: 9%"> Your IQ is: '+result+', You are smart, keep it going!</h1> \n <img src="https://78.media.tumblr.com/tumblr_lr168zmKZg1qh59n0o5_250.gif" >');
+			$('#body').html('<center><h1 style="text-align: center; margin-right: 11%"> Your IQ is: '+result+', You are smart, keep it going!</h1> \n <img src="https://78.media.tumblr.com/tumblr_lr168zmKZg1qh59n0o5_250.gif" ></center>');
 		}
 		else if (ratio < 0.80) {
-			$('#body').html('<h1 style="text-align: center; margin-right: 9%"> Your IQ is: '+result+', You are very smart. Hurray!!!</h1> \n <img src="https://thumbs.gfycat.com/MajorConsciousCorydorascatfish-size_restricted.gif" >');
+			$('#body').html('<center><h1 style="text-align: center; margin-right: 11%"> Your IQ is: '+result+', You are very smart. Hurray!!!</h1> \n <img src="https://thumbs.gfycat.com/MajorConsciousCorydorascatfish-size_restricted.gif" ></center>');
 		}
 		else {
-			$('#body').html('<h1 style="text-align: center; margin-right: 9%"> Your IQ is: '+result+', You are super intelligent!</h1> \n <img src="https://media.giphy.com/media/ohdY5OaQmUmVW/giphy.gif" >');
+			$('#body').html('<center><h1 style="text-align: center; margin-right: 11%"> Your IQ is: '+result+', You are super intelligent!</h1> \n <img src="https://media.giphy.com/media/ohdY5OaQmUmVW/giphy.gif" ></center>');
 		}
 	$('.btn').hide();
 	}
