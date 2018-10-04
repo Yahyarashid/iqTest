@@ -79,7 +79,7 @@ $("#btn").click(function() {
 		},0);
 	});
 
-$('#btn').click(function(){
+$('.btn').click(function(){
 	if ($( "input:checked" ).length < questions.length){
 		alert("Answer all questions wala");
 	} else {
@@ -92,6 +92,7 @@ $('#btn').click(function(){
 		var max = questions.length;
 		var ratio = counter/max;
 		counter *= 14.5;
+
 		if(ratio < 0.4) {
 			$('#body').html('<h1 style="text-align: center; margin-right: 9%"> Your score is: '+counter+', Kill yourself</h1>');
 		}
@@ -106,7 +107,7 @@ $('#btn').click(function(){
 		}
 	$('#btn').hide();
 	}
-})
+});
 
 
 $(document).ready(function(){
