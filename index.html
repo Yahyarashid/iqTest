@@ -4,25 +4,41 @@
 	<title> Test </title>
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="main.css">
-	<script>
-	
-	</script>
 </head>
 
 <body id="main">
+
 	<div id="nav">
-		<a href="index.html"><p id="home"> Home </p></a>
-		<p id="contact"> Contact us </p>
+		<a href="index.html" id="home"><p> Home </p></a>
+		<a href="#" id="contact"> <p> Contact us </p> </a>
 	</div>
+	
+	<div class="btn-group">
+		<button id="difficult" class="a"> Difficult </button>
+		<button id="normal" class="a"> Normal </button>
+		<button id="easy" class="a"> Easy </button>
+	</div>
+
 	<div id='body'>
-
 		<h1 class="head">IQ Test</h1>
-	
 	</div>
+	    
+	<button class="btn">Submit</button>
+
+	<div id="con">
+		<div class="col-md">
+			<p id="editors"> Editors: </p>
+			<p class="name"> Issa Anagreh </p>
+			<p class="name"> Hamza Sawalka </p>
+			<p class="git"> GitHub: </p>
+			<a href="https://github.com/IssaAnagreh" target="_blank"><p class="github"> IssaAnagreh </p></a>
+			<a href="https://github.com/hamzasawalka" target="_blank"><p class="github"> hamzasawalka </p></a>
+		</div>
+	</div>
+	<div id="map"></div>
 	
 
-	
-    <script>
+	<script>
       var map;
       function initMap() {
       	var RBK = {lat: 31.986515, lng: 35.83769887};
@@ -37,13 +53,11 @@
         });
       }
     </script>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa0tf25nzGhU8T-mYATnN_p3NJD6ynSfo&callback=initMap"
     async defer></script>
-	<button id="btn">Submit</button>
 
-	<div id="map"></div>
-	<script type="text/javascript" src="main.js">
-	</script>
+	<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>
